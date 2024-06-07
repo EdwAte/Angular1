@@ -1,0 +1,9 @@
+<h1>Verificar números capicúa</h1>
+<div>
+  <input type="text" placeholder="Ingresa un número" [(ngModel)]="numero" (ngModelChange)="verificarCapicua()">
+  @if (verificarNumero) {
+    <h2>El número {{numero}} es capicúa</h2>
+  } @else if (verificarNumero === false && numero.length >= 2) {
+    <h2>El número {{numero}} no es capicúa</h2>
+  }
+</div>
